@@ -1,0 +1,22 @@
+setup login page
+
+setup register page
+
+add hide in password input field
+
+setup aside component
+
+buat 404 page
+
+buat style untuk aside dan buatkan komponen untuk navlink
+
+buatkan komponent allposts dan suggested account
+
+suggested belum selesai selesaikan next time
+dan buatkan navbar top untuk versi mobile
+
+buatkan profile page
+
+kasih style di component list post
+
+buatkan skeleton untuk post di homepage dan post di profilepage

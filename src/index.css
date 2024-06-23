@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+* {
+  @apply box-border font-rubik;
+}
+
+.mainClassName {
+  flex-grow: 1;
+  min-height: calc(100vh - 60px);
+}
+
+.debug {
+  @apply border border-slate-900;
+}
+
+.text-icon {
+  @apply fill-current text-slate-600;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-200;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-400;
+}
+
+::webkit-scrollbar-thumb:hover {
+  @apply bg-slate-400;
+}
+
+.custom-loader {
+  border-radius: 50%;
+  background: conic-gradient(#0000 10%, skyblue);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: s3 1s infinite linear;
+}
+
+@keyframes s3 {
+  to {
+    transform: rotate(1turn);
+  }
+}

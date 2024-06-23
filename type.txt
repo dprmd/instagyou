@@ -1,0 +1,28 @@
+type UserDocument {
+  uid: string;
+  email: string;
+  username: string;
+  fullname: string;
+  posts: string[]; // Post ID
+  follower: string[]; // User ID
+  following: string[]; // User ID
+  bio: string;
+  createdAt: Date;
+}
+
+type PostDocument = {
+  id: string;
+  imgUrl: string;
+  likes: []; // User ID
+  comments: CommentDocument[];
+  caption: string;
+  createdAt: Date;
+  createdBy: string // User ID
+}
+
+type CommentDocument = {
+  comment: string;
+  createdBy: string; // User ID
+  postId: string;
+  createdAt: Date;
+}
